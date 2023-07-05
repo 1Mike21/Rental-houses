@@ -1,0 +1,130 @@
+/* Цвета */
+:root {
+  --bg_color: #F2F8FB;
+  --text_color: #333;
+  --btn_active: #06A9B3;
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: var(--text_color);
+}
+*, *::after, *::before {
+ box-sizing: inherit;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+.text_h1 {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 62px;
+}
+.text_h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+}
+.text_h5 {
+  font-size: 16px;
+  line-height: 20px;
+  opacity: 0.30000001192092896;
+}
+.text_p {
+  font-size: 22px;
+  line-height: 34px;
+}
+.header {
+  background-color: var(--bg_color);
+  margin-top: 80px;
+  margin-bottom: 208px;
+}
+.container {
+  max-width: 1270px;
+  margin: 0 auto;
+}
+.header_grid {
+  padding-top: 80px;
+  min-height: 596px;
+  margin: 0 auto;
+}
+.header_grid .text_h5 {
+  margin-bottom: 30px;
+}
+.header_description {
+  position: relative;
+  max-width: 678px;
+  z-index: 1;
+  margin-bottom: 154px;
+}
+.main_home {
+  position: absolute;
+  top: 80px;
+  right: 30px;
+}
+.btn_action {
+  background-color: var(--btn_active);
+  border: none;
+  padding: 16px 32px;
+  opacity: 1;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+.btn_arrow {
+  position: absolute;
+  padding: 24px 39px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  max-width: 210px;
+  min-height: 64px;
+  bottom: 151px;
+  left: 615px;
+}
+.divide_btn_arrow {
+  padding: 0 36px;
+}
+.number_photo {
+  color: #fff;
+  font-weight: 400;
+  position: absolute;
+  right: 60px;
+  bottom: 160px;
+}
+.houses {
+  background-color: var(--bg_color);
+}
+.houses_title {
+  padding-top: 36px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.houses_grid {
+  display: grid;
+  grid-template: repeat(1,1fr)/repeat(4,1fr);
+  gap: 24px;
+  justify-content: center;
+}
+.houses_grid_item {
+  background-color: #fff;
+  margin-bottom: 96px;
+  max-width: 327px;
+}
+.line {
+  background-color: #EAF2F6;
+  height: 1px;
+  margin: 0 auto;
+  max-width: 279px;
+}
+.description_flex {
+  display: flex;
+  justify-content: space-around;
+}
+.description_flex_item {
+
+}
