@@ -37,7 +37,7 @@
       <h2 class="text_h2 houses_title">Дома для аренды</h2>
       <div class="houses_grid">
         <div class="houses_grid_item">
-          <img class="house_picture" src="img/home_1.jpg" alt="">
+          <img class="house_picture" src="img/home_1.jpg" alt="Загородный дом 1">
           <div class="houses_grid_item_text">
             <h3 class="text_p house_item_title">Современная классика</h3>
             <h5 class="text_h5 house_item_subtitle">Площадь — 186 м<sup>2</sup></h5>
@@ -50,7 +50,7 @@
           </div>
         </div>
         <div class="houses_grid_item">
-          <img class="house_picture" src="img/home_2.jpg" alt="">
+          <img class="house_picture" src="img/home_2.jpg" alt="Загородный дом 2">
           <div class="houses_grid_item_text">
             <h3 class="text_p house_item_title">Дом на берегу озера</h3>
             <h5 class="text_h5 house_item_subtitle">Площадь — 242 м<sup>2</sup></h5>
@@ -63,7 +63,7 @@
           </div>
         </div>
         <div class="houses_grid_item">
-          <img class="house_picture" src="img/home_3.jpg" alt="">
+          <img class="house_picture" src="img/home_3.jpg" alt="Загородный дом 3">
           <div class="houses_grid_item_text">
             <h3 class="text_p house_item_title">Особняк в лесу</h3>
             <h5 class="text_h5 house_item_subtitle">Площадь — 406 м<sup>2</sup></h5>
@@ -76,7 +76,7 @@
           </div>
         </div>
         <div class="houses_grid_item">
-          <img class="house_picture" src="img/home_4.jpg" alt="">
+          <img class="house_picture" src="img/home_4.jpg" alt="Загородный дом 4">
           <div class="houses_grid_item_text">
             <h3 class="text_p house_item_title">Домик на дереве</h3>
             <h5 class="text_h5 house_item_subtitle">Площадь — 75 м<sup>2</sup></h5>
@@ -87,6 +87,56 @@
               <p class="description_flex_item text_h2">1<br><span class="subdescription">этаж</span></p>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feedback">
+    <div class="container">
+      <div class="feedback_grid">
+        <div class="feedback_grid_item">
+          <h2 class="text_h2 feedback_form_title">Мы свяжемся с вами</h2>
+          <form action="" id="feedback_form">
+            <div class="group_name">
+              <div class="group_form group_name_item">
+                <label class="label_form" for="appeal_list">Обращение</label>
+                <select class="text_h5" name="appeal_list" id="appeal_list">
+                  <option>Мистер</option>
+                </select>
+              </div>
+              <div class="group_form group_name_item">
+                <label class="label_form" for="firstname">Имя</label>
+                <input class="text_h5" name="firstname" type="text" placeholder="Джон">
+              </div>
+              <div class="group_form group_name_item">
+                <label class="label_form" for="lastname">Фамилия</label>
+                <input class="text_h5" name="lastname" type="text" placeholder="Смит">
+              </div>
+            </div>
+            <div class="group_form email">
+              <label class="label_form" for="email">E-mail</label>
+              <input class="text_h5" type="email" name="email" placeholder="johnsmith@gmail.com">
+            </div>
+            <div class="group_form phone">
+              <label class="label_form" for="phone_number">Телефон</label>
+              <input class="text_h5" type="tel" name="phone_number" placeholder="+7 999 999-99-99">
+            </div>
+            <div class="group_form_checkbox">
+              <div class="group_form form_checkbox agreement">
+                <input type="checkbox" name="agreement_checkbox">
+                <label class="label_form label_checkbox" for="agreement_checkbox">Согласие на обработку персональных данных</label>
+              </div>
+              <div class="group_form form_checkbox subscribe">
+                <input type="checkbox" name="subscribe_checkbox">
+                <label class="label_form label_checkbox" for="subscribe_checkbox">Подписка на рассылку</label>
+              </div>
+            </div>
+            <input class="btn_action" type="button" value="Отправить">
+          </form>
+        </div>
+        <div class="feedback_grid_item">
+          <img class="form_picture" src="img/form_picture.jpg" alt="">
         </div>
       </div>
     </div>

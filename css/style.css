@@ -40,6 +40,14 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 34px;
   font-weight: 400;
 }
+.label_form {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 18px;
+}
+.label_checkbox {
+  line-height: 16px;
+}
 .header {
   background-color: var(--bg_color);
   margin-top: 80px;
@@ -164,6 +172,69 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
   line-height: 20px;
 }
+.feedback {
+  padding-top: 53px;
+  margin-bottom: 40px;
+}
+.feedback_grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin: 0 auto;
+  align-items: center;
+  justify-items: center;
+  min-height: 737px;
+  padding: 15px;
+  gap: 30px;
+}
+.feedback_form_title {
+  margin-bottom: 24px;
+  text-align: left;
+}
+.group_name {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  max-width: 444px;
+  gap: 24px;
+}
+.group_name_item {
+  max-width: 132px;
+}
+.group_form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.group_form:not(.form_checkbox) input, select {
+  min-height: 44px;
+  padding: 12px 16px;
+  border: 1px solid #CFDCE3;
+}
+.group_form:not(.form_checkbox) label {
+  margin-bottom: 4px;
+}
+.group_form_checkbox {
+  display: flex;
+}
+.form_checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 210px;
+  margin-bottom: 40px;
+}
+.form_checkbox input {
+  margin-right: 12px;
+  width: 18px;
+  height: 18px;
+}
+.form_checkbox input[name=agreement_checkbox] {
+  width: 18px;
+  height: 18px;
+}
+.btn_action[value='Отправить'] {
+  padding: 12px 32px;
+}
+
 /* Медиа-запросы */
 @media screen and (max-width: 1420px) {
   .houses_grid {
@@ -185,6 +256,12 @@ h1, h2, h3, h4, h5, h6 {
   }
   .houses_grid_item_text {
     padding: 15px;
+  }
+  .feedback_grid {
+    grid-template-columns: 1fr;
+  }
+  .form_picture {
+    display: none;
   }
 }
 @media screen and (max-width: 920px) {
